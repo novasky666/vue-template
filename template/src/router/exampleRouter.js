@@ -31,19 +31,19 @@ export default [
 		component: Layout,
 		redirect: "/example/table",
 		name: "Example",
-		meta: { title: "Example", icon: "el-icon-s-help" },
+		meta: { title: "地图组件", icon: "el-icon-s-help" },
 		children: [
 			{
 				path: "table",
 				name: "Table",
 				component: () => import("@/views/table/index.vue"),
-				meta: { title: "Table", icon: "table" },
+				meta: { title: "工具栏", icon: "table" },
 			},
 			{
 				path: "tree",
 				name: "Tree",
 				component: () => import("@/views/tree/index.vue"),
-				meta: { title: "Tree", icon: "tree" },
+				meta: { title: "状态栏", icon: "tree" },
 			},
 		],
 	},
